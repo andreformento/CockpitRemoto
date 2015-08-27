@@ -1,6 +1,6 @@
 package br.com.formento.cockpitRemoto.model;
 
-public interface Movel {
+public interface Movel extends EntidadeConsistente {
 
 	Posicao getPosicao();
 

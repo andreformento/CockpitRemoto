@@ -8,10 +8,21 @@ public class MalhaRetangular implements Malha {
 
 	private Posicao posicaoMaxima;
 	private Map<Posicao, Movel> moveis;
+	private Resultado resultadoIsConsistente;
 
 	public MalhaRetangular(Posicao posicaoMaxima) {
-		this.posicaoMaxima = posicaoMaxima;
 		this.moveis = new HashMap<>();
+		this.posicaoMaxima = posicaoMaxima;
+
+		if (posicaoMaxima == null)
+			this.resultadoIsConsistente = new ResultadoImpl(TipoResultado.ERRO, "Posição máxima não configurada");
+		else
+			this.resultadoIsConsistente = new ResultadoImpl(TipoResultado.SUCESSO, "Está consistente");
+	}
+
+	@Override
+	public Resultado isConsistente() {
+		return resultadoIsConsistente;
 	}
 
 	/**
@@ -19,14 +30,15 @@ public class MalhaRetangular implements Malha {
 	 */
 	@Override
 	public Resultado isPosicaoDisponivel(Posicao posicao) {
-		if (posicaoMaxima == null)
-			return new ResultadoImpl(TipoResultado.ERRO, "Posição máxima não configurada");
-		else if (posicao.compareTo(posicaoMaxima) > 0)
-			return new ResultadoImpl(TipoResultado.ERRO, "Posição superior a margem(" + posicaoMaxima.getX() + "," + posicaoMaxima.getY() + " )");
-		else if (moveis.containsKey(posicao))
-			return new ResultadoImpl(TipoResultado.ERRO, "Posição ocupada (" + posicao.getX() + "," + posicao.getY() + " )");
-		else
-			return new ResultadoImpl(TipoResultado.SUCESSO, "Posição disponível");
+		if (isConsistente().getTipoResultado().isResultadoOk()) {
+			if (posicao.compareTo(posicaoMaxima) > 0)
+				return new ResultadoImpl(TipoResultado.ERRO, "Posição superior a margem(" + posicaoMaxima.getX() + "," + posicaoMaxima.getY() + " )");
+			else if (moveis.containsKey(posicao))
+				return new ResultadoImpl(TipoResultado.ERRO, "Posição ocupada (" + posicao.getX() + "," + posicao.getY() + " )");
+			else
+				return new ResultadoImpl(TipoResultado.SUCESSO, "Posição disponível");
+		} else
+			return isConsistente();
 	}
 
 	@Override

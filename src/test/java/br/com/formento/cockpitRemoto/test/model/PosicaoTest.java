@@ -1,11 +1,13 @@
 package br.com.formento.cockpitRemoto.test.model;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
 import org.junit.Before;
 import org.junit.Test;
 
+import br.com.formento.cockpitRemoto.model.Direcao;
 import br.com.formento.cockpitRemoto.model.Posicao;
 
 public class PosicaoTest {
@@ -65,6 +67,18 @@ public class PosicaoTest {
 		assertEquals(0, posicaoXYMenor.compareTo(posicaoMaxima));
 		assertEquals(0, posicaoMaxima.compareTo(posicaoXYMenor));
 		assertEquals(posicaoMaxima, posicaoXYMenor);
+	}
+
+	@Test
+	public void testIsConsistenteSemDirecao() {
+		Posicao posicaoSemDirecao = new Posicao(5, 5);
+		assertFalse(posicaoSemDirecao.isConsistente().getTipoResultado().isResultadoOk());
+	}
+
+	@Test
+	public void testIsConsistenteComDirecao() {
+		Posicao posicaoComDirecao = new Posicao(5, 5, Direcao.LESTE);
+		assertTrue(posicaoComDirecao.isConsistente().getTipoResultado().isResultadoOk());
 	}
 
 }

@@ -1,6 +1,6 @@
 package br.com.formento.cockpitRemoto.model;
 
-public class Posicao implements Comparable<Posicao> {
+public class Posicao implements Comparable<Posicao>, EntidadeConsistente {
 
 	private Integer x;
 	private Integer y;
@@ -24,11 +24,11 @@ public class Posicao implements Comparable<Posicao> {
 		return y;
 	}
 
-	public void girarSentidoHorario() {
+	public void rotacionarSentidoHorario() {
 		this.direcao = direcao.getProximoSentidoHorario();
 	}
 
-	public void girarSentidoAntiHorario() {
+	public void rotacionarSentidoAntiHorario() {
 		this.direcao = direcao.getProximoSentidoAntiHorario();
 	}
 
@@ -86,6 +86,14 @@ public class Posicao implements Comparable<Posicao> {
 			return -1;
 		else
 			return 1;
+	}
+
+	@Override
+	public Resultado isConsistente() {
+		if (direcao == null)
+			return new ResultadoImpl(TipoResultado.ERRO, "Posição sem direção");
+		else
+			return new ResultadoImpl(TipoResultado.SUCESSO, "Posição consistente");
 	}
 
 }

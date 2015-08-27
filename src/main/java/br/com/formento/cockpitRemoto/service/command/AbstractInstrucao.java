@@ -1,27 +1,31 @@
 package br.com.formento.cockpitRemoto.service.command;
 
-import br.com.formento.cockpitRemoto.model.Malha;
-import br.com.formento.cockpitRemoto.model.Movel;
+import br.com.formento.cockpitRemoto.model.CenarioProcessamento;
+import br.com.formento.cockpitRemoto.model.Resultado;
 
 public abstract class AbstractInstrucao implements Instrucao {
 
-	private Malha malha;
-	private Movel movel;
+	private CenarioProcessamento cenarioProcessamento;
 
-	public AbstractInstrucao(Malha malha) {
-		this.malha = malha;
+	@Override
+	public void configurarCenarioProcessamento(CenarioProcessamento cenarioProcessamento) {
+		this.cenarioProcessamento = cenarioProcessamento;
 	}
 
-	public Malha getMalha() {
-		return malha;
+	@Override
+	public CenarioProcessamento getCenarioProcessamento() {
+		return cenarioProcessamento;
 	}
 
-	public Movel getMovel() {
-		return movel;
-	}
+	protected abstract Resultado executarInterno();
 
-	public void setMovel(Movel movel) {
-		this.movel = movel;
+	@Override
+	public final Resultado executar() {
+		Resultado consistente = isConsistente();
+		if (consistente.getTipoResultado().isResultadoOk())
+			return executarInterno();
+		else
+			return consistente;
 	}
 
 }

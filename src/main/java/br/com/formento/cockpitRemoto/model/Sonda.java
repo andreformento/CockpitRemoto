@@ -18,4 +18,12 @@ public class Sonda implements Movel {
 		this.posicao = posicao;
 	}
 
+	@Override
+	public Resultado isConsistente() {
+		if (posicao == null)
+			return new ResultadoImpl(TipoResultado.ERRO, "Sonda sem posição configurada");
+		else
+			return posicao.isConsistente();
+	}
+
 }

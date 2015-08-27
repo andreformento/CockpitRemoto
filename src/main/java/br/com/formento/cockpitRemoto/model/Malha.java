@@ -2,7 +2,7 @@ package br.com.formento.cockpitRemoto.model;
 
 import java.util.Collection;
 
-public interface Malha {
+public interface Malha extends EntidadeConsistente {
 
 	Resultado isPosicaoDisponivel(Posicao posicao);
 
