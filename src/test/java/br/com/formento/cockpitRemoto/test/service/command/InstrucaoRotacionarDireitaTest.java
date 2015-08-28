@@ -7,6 +7,7 @@ import static org.junit.Assert.assertTrue;
 import org.junit.Before;
 import org.junit.Test;
 
+import br.com.formento.cockpitRemoto.model.CenarioProcessamento;
 import br.com.formento.cockpitRemoto.model.CenarioProcessamentoImpl;
 import br.com.formento.cockpitRemoto.model.Direcao;
 import br.com.formento.cockpitRemoto.model.Malha;
@@ -19,30 +20,30 @@ import br.com.formento.cockpitRemoto.service.command.InstrucaoRotacionarDireita;
 public class InstrucaoRotacionarDireitaTest {
 
 	private InstrucaoRotacionarDireita instrucao;
+	private CenarioProcessamento cenarioProcessamento;
 
 	@Before
 	public void init() {
 		Posicao posicaoMaxima = new Posicao(5, 5);
 		Malha malha = new MalhaRetangular(posicaoMaxima);
 
-		CenarioProcessamentoImpl cenarioProcessamento = new CenarioProcessamentoImpl();
+		cenarioProcessamento = new CenarioProcessamentoImpl();
 		cenarioProcessamento.setMalha(malha);
 		instrucao = new InstrucaoRotacionarDireita();
-		instrucao.configurarCenarioProcessamento(cenarioProcessamento);
 	}
 
 	@Test
 	public void testExecutarAdicionarResultadoSucesso() {
-		instrucao.getCenarioProcessamento().setMovel(new Sonda(new Posicao(4, 3, Direcao.NORTE)));
-		Resultado executar = instrucao.executar();
+		cenarioProcessamento.setMovel(new Sonda(new Posicao(4, 3, Direcao.NORTE)));
+		Resultado executar = instrucao.executar(cenarioProcessamento);
 		assertNotNull(executar);
 		assertTrue(executar.getTipoResultado().isResultadoOk());
 	}
 
 	@Test
 	public void testExecutarAdicionarResultadoErro() {
-		instrucao.getCenarioProcessamento().setMovel(new Sonda(new Posicao(6, 3)));
-		Resultado executar = instrucao.executar();
+		cenarioProcessamento.setMovel(new Sonda(new Posicao(6, 3)));
+		Resultado executar = instrucao.executar(cenarioProcessamento);
 		assertNotNull(executar);
 		assertFalse(executar.getTipoResultado().isResultadoOk());
 	}

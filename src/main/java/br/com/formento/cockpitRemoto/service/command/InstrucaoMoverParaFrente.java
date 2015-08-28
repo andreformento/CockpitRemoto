@@ -1,5 +1,6 @@
 package br.com.formento.cockpitRemoto.service.command;
 
+import br.com.formento.cockpitRemoto.model.CenarioProcessamento;
 import br.com.formento.cockpitRemoto.model.Posicao;
 import br.com.formento.cockpitRemoto.model.Resultado;
 
@@ -7,13 +8,13 @@ import br.com.formento.cockpitRemoto.model.Resultado;
 public class InstrucaoMoverParaFrente extends AbstractInstrucaoMovimento {
 
 	@Override
-	public Resultado executarInterno() {
-		Posicao posicaoAtual = getCenarioProcessamento().getMovel().getPosicao();
+	protected Resultado executarInterno(CenarioProcessamento cenarioProcessamento) {
+		Posicao posicaoAtual = cenarioProcessamento.getMovel().getPosicao();
 		MovimentoAndarParaFrente movimentoAndarParaFrente = posicaoAtual.getDirecao().getMovimentoAndarParaFrente();
 
 		Posicao novaPosicao = movimentoAndarParaFrente.novaPosicao(posicaoAtual);
 
-		return getCenarioProcessamento().getMalha().trocarPosicao(posicaoAtual, novaPosicao);
+		return cenarioProcessamento.getMalha().trocarPosicao(posicaoAtual, novaPosicao);
 	}
 
 }

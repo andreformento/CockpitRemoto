@@ -1,24 +1,24 @@
 package br.com.formento.cockpitRemoto.service.interpreter;
 
-import br.com.formento.cockpitRemoto.model.Malha;
+import br.com.formento.cockpitRemoto.model.CenarioProcessamento;
+import br.com.formento.cockpitRemoto.service.factory.InstrucaoFlyweight;
 
 public abstract class AbstractInstrucaoInterpreter implements InstrucaoInterpreter {
 
-	private Malha malha;
+	private CenarioProcessamento cenarioProcessamento;
+	private InstrucaoFlyweight instrucaoFlyweight;
 
-	public AbstractInstrucaoInterpreter(Malha malha) {
-		this.malha = malha;
+	public AbstractInstrucaoInterpreter(InstrucaoFlyweight instrucaoFlyweight, CenarioProcessamento cenarioProcessamento) {
+		this.instrucaoFlyweight = instrucaoFlyweight;
+		this.cenarioProcessamento = cenarioProcessamento;
 	}
 
-	@Override
-	public void interpretar(ContextoInterpreter<String, ResultadoInterpreterInstrucao> contextoInterpreter) {
-		validar(contextoInterpreter);
+	public CenarioProcessamento getCenarioProcessamento() {
+		return cenarioProcessamento;
 	}
 
-	protected abstract void validar(ContextoInterpreter<String, ResultadoInterpreterInstrucao> contextoInterpreter);
-
-	public Malha getMalha() {
-		return malha;
+	public InstrucaoFlyweight getInstrucaoFlyweight() {
+		return instrucaoFlyweight;
 	}
 
 }

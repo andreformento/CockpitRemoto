@@ -20,4 +20,15 @@ public class ResultadoImpl implements Resultado {
 		return mensagem;
 	}
 
+	@Override
+	public String toString() {
+		StringBuilder exibir = new StringBuilder();
+
+		exibir.append(tipoResultado.name());
+		exibir.append(" - ");
+		exibir.append(mensagem);
+
+		return exibir.toString();
+	}
+
 }

@@ -1,5 +1,6 @@
 package br.com.formento.cockpitRemoto.service.command;
 
+import br.com.formento.cockpitRemoto.model.CenarioProcessamento;
 import br.com.formento.cockpitRemoto.model.Resultado;
 import br.com.formento.cockpitRemoto.model.ResultadoImpl;
 import br.com.formento.cockpitRemoto.model.TipoResultado;
@@ -8,8 +9,8 @@ import br.com.formento.cockpitRemoto.model.TipoResultado;
 public class InstrucaoRotacionarDireita extends AbstractInstrucaoMovimento {
 
 	@Override
-	public Resultado executarInterno() {
-		getCenarioProcessamento().getMovel().getPosicao().rotacionarSentidoHorario();
+	public Resultado executarInterno(CenarioProcessamento cenarioProcessamento) {
+		cenarioProcessamento.getMovel().getPosicao().rotacionarSentidoHorario();
 
 		return new ResultadoImpl(TipoResultado.SUCESSO, "Movel rotacionou sentido horário");
 	}

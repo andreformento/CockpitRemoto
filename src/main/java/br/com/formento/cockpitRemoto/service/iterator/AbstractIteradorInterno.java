@@ -51,15 +51,22 @@ public abstract class AbstractIteradorInterno<T> implements IteradorInterno<T> {
 		return listaPercorrer.isEmpty();
 	}
 
+	/**
+	 * Retorna sempre o utimo result da lista
+	 */
 	@Override
 	public Resultado percorrerLista() {
+		Resultado result = null;
 		for (first(); !isDone(); next()) {
-			Resultado resultadoOperacao = operacao(currentItem());
-			if (!resultadoOperacao.getTipoResultado().isResultadoOk())
-				return resultadoOperacao;
+			result = operacao(currentItem());
+			if (!result.getTipoResultado().isResultadoOk())
+				return result;
 		}
 
-		return new ResultadoImpl(TipoResultado.SUCESSO, "Execução concluida com sucesso");
+		if (result == null)
+			return new ResultadoImpl(TipoResultado.AVISO, "Nenhum item encontrado");
+		else
+			return result;
 	}
 
 }

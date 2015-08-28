@@ -78,4 +78,13 @@ public class MalhaRetangular implements Malha {
 		return moveis.values();
 	}
 
+	@Override
+	public String toString() {
+		return "MalhaRetangular [posicaoMaxima=" + posicaoMaxima + ", moveis=" + moveis + ", resultadoIsConsistente=" + resultadoIsConsistente + "]";
+	}
+
+	public Posicao getPosicaoMaxima() {
+		return posicaoMaxima;
+	}
+
 }

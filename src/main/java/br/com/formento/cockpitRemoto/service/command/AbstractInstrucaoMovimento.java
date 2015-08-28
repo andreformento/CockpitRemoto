@@ -1,25 +1,25 @@
 package br.com.formento.cockpitRemoto.service.command;
 
+import br.com.formento.cockpitRemoto.model.CenarioProcessamento;
 import br.com.formento.cockpitRemoto.model.Resultado;
-import br.com.formento.cockpitRemoto.model.ResultadoImpl;
-import br.com.formento.cockpitRemoto.model.TipoResultado;
 
-public abstract class AbstractInstrucaoMovimento extends AbstractInstrucao {
+public abstract class AbstractInstrucaoMovimento implements Instrucao {
+
+	protected abstract Resultado executarInterno(CenarioProcessamento cenarioProcessamento);
 
 	@Override
-	public Resultado isConsistente() {
+	public final Resultado executar(CenarioProcessamento cenarioProcessamento) {
 		// TODO applicar pattern
-		if (getCenarioProcessamento().getMalha() == null)
-			return new ResultadoImpl(TipoResultado.ERRO, "DiscoverClassByAnnotationTest malha está nula");
-		else if (getCenarioProcessamento().getMovel() == null)
-			return new ResultadoImpl(TipoResultado.ERRO, "O movel está nulo");
-		else {
-			Resultado resultado = getCenarioProcessamento().getMalha().isConsistente();
-			if (resultado.getTipoResultado().isResultadoOk())
-				return getCenarioProcessamento().getMovel().isConsistente();
+
+		Resultado resultadoMalha = cenarioProcessamento.validarMalha();
+		if (resultadoMalha.getTipoResultado().isResultadoOk()) {
+			Resultado resultadoMovel = cenarioProcessamento.validarMovel();
+			if (resultadoMovel.getTipoResultado().isResultadoOk())
+				return executarInterno(cenarioProcessamento);
 			else
-				return resultado;
-		}
+				return resultadoMovel;
+		} else
+			return resultadoMalha;
 	}
 
 }
