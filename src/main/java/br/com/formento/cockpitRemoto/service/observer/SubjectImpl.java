@@ -35,11 +35,22 @@ public class SubjectImpl<T> implements Subject<T> {
 	private Resultado notifyObservers() {
 		for (Observer observer : observers) {
 			Resultado resultado = observer.update();
-			if (observer.equals(resultado.getTipoResultado()))
+			if (observer.getResultadoBreak().equals(resultado.getTipoResultado()))
 				return resultado;
 		}
 
-		return new ResultadoImpl(TipoResultado.SUCESSO, "Status atualizado");
+		TipoResultado tipoResultado;
+		StringBuilder mensagem = new StringBuilder();
+
+		if (observers.isEmpty()) {
+			mensagem.append("Nenhum notificação realizada");
+			tipoResultado = TipoResultado.AVISO;
+		} else {
+			mensagem.append("Notificações realizadas: ");
+			mensagem.append(observers.size());
+			tipoResultado = TipoResultado.SUCESSO;
+		}
+		return new ResultadoImpl(tipoResultado, mensagem.toString());
 	}
 
 	@Override

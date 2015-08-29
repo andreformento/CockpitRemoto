@@ -7,6 +7,10 @@ public interface Observer {
 
 	Resultado update();
 
-	TipoResultado getTipoResultadoPermiteContinuar();
+	/**
+	 * 
+	 * @return Tipo de resultado que faz parar as notificações
+	 */
+	TipoResultado getResultadoBreak();
 
 }

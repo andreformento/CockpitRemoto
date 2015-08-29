@@ -6,4 +6,8 @@ public interface Movel extends EntidadeConsistente {
 
 	void mover(Posicao posicao);
 
+	void setOrdem(Integer ordem);
+
+	Integer getOrdem();
+
 }

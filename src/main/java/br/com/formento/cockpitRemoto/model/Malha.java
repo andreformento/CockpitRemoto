@@ -14,4 +14,6 @@ public interface Malha extends EntidadeConsistente {
 
 	Collection<Movel> getMoveis();
 
+	Movel getByPosicao(Posicao posicao);
+
 }

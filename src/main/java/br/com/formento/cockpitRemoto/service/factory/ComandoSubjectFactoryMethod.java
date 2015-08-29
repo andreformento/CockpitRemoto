@@ -1,9 +1,9 @@
 package br.com.formento.cockpitRemoto.service.factory;
 
-import br.com.formento.cockpitRemoto.model.CenarioProcessamento;
+import br.com.formento.cockpitRemoto.service.interpreter.ResultadoInterpreterInstrucao;
 
 public interface ComandoSubjectFactoryMethod {
 
-	ComandoSubjectDirector criarInstancia(InstrucaoFlyweight instrucaoFlyweight, CenarioProcessamento cenarioProcessamento);
+	ComandoSubjectDirector criarInstancia(InstrucaoFlyweight instrucaoFlyweight, ResultadoInterpreterInstrucao resultadoInterpreterInstrucao);
 
 }

@@ -1,30 +1,32 @@
 package br.com.formento.cockpitRemoto.service.factory;
 
-import br.com.formento.cockpitRemoto.service.facade.SistemaCockpitFacade;
+import br.com.formento.cockpitRemoto.model.Cockpit;
 
-public class SistemaCockpitFacadeDirectorImpl implements SistemaCockpitFacadeDirector {
+public class CockpitDirectorImpl implements CockpitDirector {
 
-	protected SistemaCockpitFacadeBuilder builder;
+	protected CockpitBuilder builder;
 
-	public SistemaCockpitFacadeDirectorImpl(SistemaCockpitFacadeBuilder builder) {
+	public CockpitDirectorImpl(CockpitBuilder builder) {
 		this.builder = builder;
 	}
 
 	@Override
 	public void construirInstancia() {
-		builder.buildEntradaDirector();
-
 		builder.buildCenarioProcessamentoFactoryMethod();
 
 		builder.buildComandoSubjectFactory();
 
 		builder.buildIteradorComandoSubjectFactoryMethod();
 
+		builder.buildInstrucaoFlyweightFactoryMethod();
+
+		builder.buildResultadoInterpreterInstrucaoFactoryMethod();
+
 		builder.buildInstance();
 	}
 
 	@Override
-	public SistemaCockpitFacade getProduct() {
+	public Cockpit getProduct() {
 		return builder.getProduct();
 	}
 

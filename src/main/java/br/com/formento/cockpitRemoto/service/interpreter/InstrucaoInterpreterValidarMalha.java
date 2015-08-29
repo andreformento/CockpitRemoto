@@ -1,6 +1,5 @@
 package br.com.formento.cockpitRemoto.service.interpreter;
 
-import br.com.formento.cockpitRemoto.model.CenarioProcessamento;
 import br.com.formento.cockpitRemoto.model.MalhaRetangular;
 import br.com.formento.cockpitRemoto.model.Resultado;
 import br.com.formento.cockpitRemoto.service.command.InstrucaoValidarMalha;
@@ -10,21 +9,20 @@ public class InstrucaoInterpreterValidarMalha extends AbstractInstrucaoInterpret
 
 	private EstruturaInstrucaoValidarMalha estruturaInstrucao;
 
-	public InstrucaoInterpreterValidarMalha(InstrucaoFlyweight instrucaoFlyweight, CenarioProcessamento cenarioProcessamento) {
-		super(instrucaoFlyweight, cenarioProcessamento);
+	public InstrucaoInterpreterValidarMalha(InstrucaoFlyweight instrucaoFlyweight) {
+		super(instrucaoFlyweight);
 	}
 
 	@Override
-	protected EstruturaInstrucao getEstruturaInstrucao(String input) {
-		if (estruturaInstrucao == null)
-			estruturaInstrucao = new EstruturaInstrucaoValidarMalha(input);
+	protected EstruturaInstrucao gerarEstruturaInstrucao(String input) {
+		estruturaInstrucao = new EstruturaInstrucaoValidarMalha(input);
 		return estruturaInstrucao;
 	}
 
 	@Override
 	protected Resultado gerarInstrucao(ResultadoInterpreterInstrucao output) {
 		MalhaRetangular malhaRetangular = estruturaInstrucao.getMalhaRetangular();
-		getCenarioProcessamento().setMalha(malhaRetangular);
+		output.getCenarioProcessamento().setMalha(malhaRetangular);
 		output.addInstrucao(getInstrucaoFlyweight().getFlyweight(InstrucaoValidarMalha.class));
 		return estruturaInstrucao.getResultadoMontagem();
 	}

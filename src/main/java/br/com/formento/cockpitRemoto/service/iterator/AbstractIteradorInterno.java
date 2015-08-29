@@ -58,7 +58,8 @@ public abstract class AbstractIteradorInterno<T> implements IteradorInterno<T> {
 	public Resultado percorrerLista() {
 		Resultado result = null;
 		for (first(); !isDone(); next()) {
-			result = operacao(currentItem());
+			T itemAtual = currentItem();
+			result = operacao(itemAtual);
 			if (!result.getTipoResultado().isResultadoOk())
 				return result;
 		}

@@ -1,6 +1,5 @@
 package br.com.formento.cockpitRemoto.service.interpreter;
 
-import br.com.formento.cockpitRemoto.model.CenarioProcessamento;
 import br.com.formento.cockpitRemoto.model.Resultado;
 import br.com.formento.cockpitRemoto.service.command.Instrucao;
 import br.com.formento.cockpitRemoto.service.factory.InstrucaoFlyweight;
@@ -9,14 +8,13 @@ public class InstrucaoInterpreterMovimento extends AbstractInstrucaoInterpreterE
 
 	private EstruturaInstrucaoMovimento estruturaInstrucao;
 
-	public InstrucaoInterpreterMovimento(InstrucaoFlyweight instrucaoFlyweight, CenarioProcessamento cenarioProcessamento) {
-		super(instrucaoFlyweight, cenarioProcessamento);
+	public InstrucaoInterpreterMovimento(InstrucaoFlyweight instrucaoFlyweight) {
+		super(instrucaoFlyweight);
 	}
 
 	@Override
-	protected EstruturaInstrucao getEstruturaInstrucao(String input) {
-		if (estruturaInstrucao == null)
-			estruturaInstrucao = new EstruturaInstrucaoMovimento(input);
+	protected EstruturaInstrucao gerarEstruturaInstrucao(String input) {
+		estruturaInstrucao = new EstruturaInstrucaoMovimento(input);
 		return estruturaInstrucao;
 	}
 

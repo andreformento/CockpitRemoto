@@ -9,7 +9,7 @@ public abstract class AbstractMovimentoAndarParaFrente implements MovimentoAndar
 	public abstract Integer somarEmY();
 
 	public Posicao novaPosicao(Posicao posicaoAtual) {
-		return new Posicao(posicaoAtual.getX() + somarEmX(), posicaoAtual.getY() + somarEmY());
+		return new Posicao(posicaoAtual.getX() + somarEmX(), posicaoAtual.getY() + somarEmY(), posicaoAtual.getDirecao());
 	}
 
 }

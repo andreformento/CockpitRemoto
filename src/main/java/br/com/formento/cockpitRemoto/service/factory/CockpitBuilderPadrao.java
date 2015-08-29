@@ -1,25 +1,21 @@
 package br.com.formento.cockpitRemoto.service.factory;
 
-import br.com.formento.cockpitRemoto.service.facade.SistemaCockpitFacadeImpl;
+import br.com.formento.cockpitRemoto.service.templateMethod.CockpitTemplateMethodImpl;
 
-public class SistemaCockpitFacadeBuilderPadrao extends SistemaCockpitFacadeAbstractBuilder {
+public class CockpitBuilderPadrao extends CockpitAbstractBuilder {
 
 	private final EntradaBuilder entradaBuilder;
 
-	private EntradaDirector entradaDirector;
 	private CenarioProcessamentoFactoryMethod cenarioProcessamentoFactoryMethod;
 	private IteradorComandoSubjectFactoryMethod iteradorComandoSubjectFactoryMethod;
 	private ComandoSubjectFactoryMethodImpl comandoSubjectFactoryMethod;
 
 	private InstrucaoFlyweightFactoryMethod instrucaoFlyweightFactoryMethod;
 
-	public SistemaCockpitFacadeBuilderPadrao(EntradaBuilder entradaBuilder) {
-		this.entradaBuilder = entradaBuilder;
-	}
+	private ResultadoInterpreterInstrucaoFactoryMethod resultadoInterpreterInstrucaoFactoryMethod;
 
-	@Override
-	public void buildEntradaDirector() {
-		entradaDirector = new EntradaDirectorImpl(entradaBuilder);
+	public CockpitBuilderPadrao(EntradaBuilder entradaBuilder) {
+		this.entradaBuilder = entradaBuilder;
 	}
 
 	@Override
@@ -44,9 +40,14 @@ public class SistemaCockpitFacadeBuilderPadrao extends SistemaCockpitFacadeAbstr
 	}
 
 	@Override
+	public void buildResultadoInterpreterInstrucaoFactoryMethod() {
+		resultadoInterpreterInstrucaoFactoryMethod = new ResultadoInterpreterInstrucaoFactoryMethodImpl();
+	}
+
+	@Override
 	public void buildInstance() {
-		product = new SistemaCockpitFacadeImpl(entradaDirector, cenarioProcessamentoFactoryMethod, comandoSubjectFactoryMethod,
-				iteradorComandoSubjectFactoryMethod, instrucaoFlyweightFactoryMethod);
+		product = new CockpitTemplateMethodImpl(entradaBuilder, cenarioProcessamentoFactoryMethod, comandoSubjectFactoryMethod,
+				iteradorComandoSubjectFactoryMethod, instrucaoFlyweightFactoryMethod, resultadoInterpreterInstrucaoFactoryMethod);
 	}
 
 }

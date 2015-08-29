@@ -1,6 +1,5 @@
 package br.com.formento.cockpitRemoto.service.interpreter;
 
-import br.com.formento.cockpitRemoto.model.CenarioProcessamento;
 import br.com.formento.cockpitRemoto.model.Movel;
 import br.com.formento.cockpitRemoto.model.Resultado;
 import br.com.formento.cockpitRemoto.service.command.InstrucaoAdicionarMovel;
@@ -10,21 +9,20 @@ public class InstrucaoInterpreterAdicionarMovel extends AbstractInstrucaoInterpr
 
 	private EstruturaInstrucaoAdicionarMovel estruturaInstrucao;
 
-	public InstrucaoInterpreterAdicionarMovel(InstrucaoFlyweight instrucaoFlyweight, CenarioProcessamento cenarioProcessamento) {
-		super(instrucaoFlyweight, cenarioProcessamento);
+	public InstrucaoInterpreterAdicionarMovel(InstrucaoFlyweight instrucaoFlyweight) {
+		super(instrucaoFlyweight);
 	}
 
 	@Override
-	protected EstruturaInstrucao getEstruturaInstrucao(String input) {
-		if (estruturaInstrucao == null)
-			estruturaInstrucao = new EstruturaInstrucaoAdicionarMovel(input);
+	protected EstruturaInstrucao gerarEstruturaInstrucao(String input) {
+		estruturaInstrucao = new EstruturaInstrucaoAdicionarMovel(input);
 		return estruturaInstrucao;
 	}
 
 	@Override
 	protected Resultado gerarInstrucao(ResultadoInterpreterInstrucao output) {
 		Movel movel = estruturaInstrucao.getMovel();
-		getCenarioProcessamento().setMovel(movel);
+		output.getCenarioProcessamento().setMovel(movel);
 		output.addInstrucao(getInstrucaoFlyweight().getFlyweight(InstrucaoAdicionarMovel.class));
 		return estruturaInstrucao.getResultadoMontagem();
 	}

@@ -1,38 +1,23 @@
 package br.com.formento.cockpitRemoto.service.factory;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
-import java.io.IOException;
-import java.util.ArrayList;
-
 import br.com.formento.cockpitRemoto.model.EntradaImpl;
+import br.com.formento.cockpitRemoto.service.adapter.RepositorioInstrucaoTarget;
 
-public class EntradaBuilderArquivo extends EntradaAbstractBuilder {
+public class EntradaBuilderArquivo extends EntradaAbstractBuilder implements EntradaBuilder {
 
-	private File file;
+	private RepositorioInstrucaoTarget repositorioInstrucaoTarget;
 
-	public EntradaBuilderArquivo(File file) {
-		this.file = file;
+	public EntradaBuilderArquivo(RepositorioInstrucaoTarget repositorioInstrucaoTarget) {
+		this.repositorioInstrucaoTarget = repositorioInstrucaoTarget;
 	}
 
 	@Override
 	public void buildComandoList() {
-		comandoList = new ArrayList<>();
 		try {
-			BufferedReader bufferedReader = null;
-			try {
-				bufferedReader = new BufferedReader(new FileReader(file));
-				String linha;
-				while ((linha = bufferedReader.readLine()) != null)
-					comandoList.add(linha);
-			} finally {
-				if (bufferedReader != null)
-					bufferedReader.close();
-			}
-		} catch (IOException e) {
-			e.printStackTrace();
-			comandoList.add(e.getMessage());
+			repositorioInstrucaoTarget.abrir();
+			comandoList = repositorioInstrucaoTarget.ler();
+		} finally {
+			repositorioInstrucaoTarget.fechar();
 		}
 	}
 

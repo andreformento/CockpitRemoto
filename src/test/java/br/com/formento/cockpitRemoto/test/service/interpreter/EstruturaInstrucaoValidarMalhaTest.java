@@ -7,6 +7,7 @@ import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
 
+import br.com.formento.cockpitRemoto.model.MalhaAbstract;
 import br.com.formento.cockpitRemoto.model.MalhaRetangular;
 import br.com.formento.cockpitRemoto.model.Posicao;
 import br.com.formento.cockpitRemoto.model.Resultado;
@@ -75,7 +76,7 @@ public class EstruturaInstrucaoValidarMalhaTest {
 		Resultado resultadoMontagem = estrutura.getResultadoMontagem();
 		assertEquals(resultadoMontagem.toString(), TipoResultado.AVISO, resultadoMontagem.getTipoResultado());
 
-		MalhaRetangular malhaRetangular = estrutura.getMalhaRetangular();
+		MalhaAbstract malhaRetangular = estrutura.getMalhaRetangular();
 		assertNull(malhaRetangular);
 	}
 
@@ -88,7 +89,7 @@ public class EstruturaInstrucaoValidarMalhaTest {
 		Resultado resultadoMontagem = estrutura.getResultadoMontagem();
 		assertEquals(resultadoMontagem.toString(), TipoResultado.AVISO, resultadoMontagem.getTipoResultado());
 
-		MalhaRetangular malhaRetangular = estrutura.getMalhaRetangular();
+		MalhaAbstract malhaRetangular = estrutura.getMalhaRetangular();
 		assertNull(malhaRetangular);
 	}
 
@@ -101,7 +102,7 @@ public class EstruturaInstrucaoValidarMalhaTest {
 		Resultado resultadoMontagem = estrutura.getResultadoMontagem();
 		assertEquals(resultadoMontagem.toString(), TipoResultado.AVISO, resultadoMontagem.getTipoResultado());
 
-		MalhaRetangular malhaRetangular = estrutura.getMalhaRetangular();
+		MalhaAbstract malhaRetangular = estrutura.getMalhaRetangular();
 		assertNull(malhaRetangular);
 	}
 
@@ -114,7 +115,7 @@ public class EstruturaInstrucaoValidarMalhaTest {
 		Resultado resultadoMontagem = estrutura.getResultadoMontagem();
 		assertEquals(resultadoMontagem.toString(), TipoResultado.AVISO, resultadoMontagem.getTipoResultado());
 
-		MalhaRetangular malhaRetangular = estrutura.getMalhaRetangular();
+		MalhaAbstract malhaRetangular = estrutura.getMalhaRetangular();
 		assertNull(malhaRetangular);
 	}
 
@@ -127,7 +128,7 @@ public class EstruturaInstrucaoValidarMalhaTest {
 		Resultado resultadoMontagem = estrutura.getResultadoMontagem();
 		assertEquals(resultadoMontagem.toString(), TipoResultado.AVISO, resultadoMontagem.getTipoResultado());
 
-		MalhaRetangular malhaRetangular = estrutura.getMalhaRetangular();
+		MalhaAbstract malhaRetangular = estrutura.getMalhaRetangular();
 		assertNull(malhaRetangular);
 	}
 
@@ -140,7 +141,7 @@ public class EstruturaInstrucaoValidarMalhaTest {
 		Resultado resultadoMontagem = estrutura.getResultadoMontagem();
 		assertEquals(resultadoMontagem.toString(), TipoResultado.AVISO, resultadoMontagem.getTipoResultado());
 
-		MalhaRetangular malhaRetangular = estrutura.getMalhaRetangular();
+		MalhaAbstract malhaRetangular = estrutura.getMalhaRetangular();
 		assertNull(malhaRetangular);
 	}
 
