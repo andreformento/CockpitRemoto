@@ -1,0 +1,4 @@
+http://www.objectaid.com/download
+Instalação
+Name: ObjectAid UML Explorer
+URL: http://www.objectaid.net/update

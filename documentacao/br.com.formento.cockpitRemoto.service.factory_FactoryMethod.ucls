@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.1.8" icons="true" automaticImage="PNG" always-add-relationships="false" generalizations="true" 
+  realizations="true" associations="true" dependencies="false" nesting-relationships="true">  
+  <interface id="1" language="java" 
+    name="br.com.formento.cockpitRemoto.service.factory.IteradorComandoSubjectFactoryMethod" project="CockpitRemoto" 
+    file="/CockpitRemoto/src/main/java/br/com/formento/cockpitRemoto/service/factory/IteradorComandoSubjectFactoryMethod.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="194" y="579"/>    
+    <display autosize="true" stereotype="true" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <interface id="2" language="java" name="br.com.formento.cockpitRemoto.service.factory.ComandoSubjectFactoryMethod" 
+    project="CockpitRemoto" 
+    file="/CockpitRemoto/src/main/java/br/com/formento/cockpitRemoto/service/factory/ComandoSubjectFactoryMethod.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="359" y="163"/>    
+    <display autosize="true" stereotype="true" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="3" language="java" name="br.com.formento.cockpitRemoto.service.factory.ComandoSubjectFactoryMethodImpl" 
+    project="CockpitRemoto" 
+    file="/CockpitRemoto/src/main/java/br/com/formento/cockpitRemoto/service/factory/ComandoSubjectFactoryMethodImpl.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="358" y="60"/>    
+    <display autosize="true" stereotype="true" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="4" language="java" name="br.com.formento.cockpitRemoto.service.factory.InstrucaoFlyweightFactoryMethod" 
+    project="CockpitRemoto" 
+    file="/CockpitRemoto/src/main/java/br/com/formento/cockpitRemoto/service/factory/InstrucaoFlyweightFactoryMethod.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="565" y="366"/>    
+    <display autosize="true" stereotype="true" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <interface id="5" language="java" 
+    name="br.com.formento.cockpitRemoto.service.factory.CenarioProcessamentoFactoryMethod" project="CockpitRemoto" 
+    file="/CockpitRemoto/src/main/java/br/com/formento/cockpitRemoto/service/factory/CenarioProcessamentoFactoryMethod.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="569" y="674"/>    
+    <display autosize="true" stereotype="true" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="6" language="java" name="br.com.formento.cockpitRemoto.service.factory.InstrucaoFactoryMethodImpl" 
+    project="CockpitRemoto" 
+    file="/CockpitRemoto/src/main/java/br/com/formento/cockpitRemoto/service/factory/InstrucaoFactoryMethodImpl.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="170" y="265"/>    
+    <display autosize="true" stereotype="true" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="7" language="java" name="br.com.formento.cockpitRemoto.service.factory.InstrucaoFlyweightFactoryMethodImpl" 
+    project="CockpitRemoto" 
+    file="/CockpitRemoto/src/main/java/br/com/formento/cockpitRemoto/service/factory/InstrucaoFlyweightFactoryMethodImpl.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="572" y="260"/>    
+    <display autosize="true" stereotype="true" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="8" language="java" 
+    name="br.com.formento.cockpitRemoto.service.factory.IteradorComandoSubjectFactoryMethodImpl" project="CockpitRemoto" 
+    
+    file="/CockpitRemoto/src/main/java/br/com/formento/cockpitRemoto/service/factory/IteradorComandoSubjectFactoryMethodImpl.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="194" y="464"/>    
+    <display autosize="true" stereotype="true" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="9" language="java" name="br.com.formento.cockpitRemoto.service.factory.InstrucaoFactoryMethod" 
+    project="CockpitRemoto" 
+    file="/CockpitRemoto/src/main/java/br/com/formento/cockpitRemoto/service/factory/InstrucaoFactoryMethod.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="170" y="367"/>    
+    <display autosize="true" stereotype="true" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="10" language="java" 
+    name="br.com.formento.cockpitRemoto.service.factory.CenarioProcessamentoFactoryMethodImpl" project="CockpitRemoto" 
+    file="/CockpitRemoto/src/main/java/br/com/formento/cockpitRemoto/service/factory/CenarioProcessamentoFactoryMethodImpl.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="197" y="678"/>    
+    <display autosize="true" stereotype="true" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="11" language="java" 
+    name="br.com.formento.cockpitRemoto.service.factory.ResultadoInterpreterInstrucaoFactoryMethodImpl" 
+    project="CockpitRemoto" 
+    file="/CockpitRemoto/src/main/java/br/com/formento/cockpitRemoto/service/factory/ResultadoInterpreterInstrucaoFactoryMethodImpl.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="580" y="460"/>    
+    <display autosize="true" stereotype="true" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="12" language="java" 
+    name="br.com.formento.cockpitRemoto.service.factory.ResultadoInterpreterInstrucaoFactoryMethod" 
+    project="CockpitRemoto" 
+    file="/CockpitRemoto/src/main/java/br/com/formento/cockpitRemoto/service/factory/ResultadoInterpreterInstrucaoFactoryMethod.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="580" y="575"/>    
+    <display autosize="true" stereotype="true" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <realization id="13">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="1"/>  
+  </realization>  
+  <realization id="14">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="5"/>  
+  </realization>  
+  <realization id="15">    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="12"/>  
+  </realization>  
+  <realization id="16">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="9"/>  
+  </realization>  
+  <realization id="17">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="2"/>  
+  </realization>  
+  <realization id="18">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="4"/>  
+  </realization>  
+  <classifier-display autosize="true" stereotype="true" package="false" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

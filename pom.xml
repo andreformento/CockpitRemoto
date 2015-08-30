@@ -25,6 +25,7 @@
 			</plugin>
 		</plugins>
 	</build>
+
 	<dependencies>
 		<!-- test -->
 		<dependency>
@@ -45,8 +46,6 @@
 			<version>2.0.31-beta</version>
 			<scope>test</scope>
 		</dependency>
-
-
 
 		<!-- para carregar as instruções dinamicamente -->
 		<dependency>

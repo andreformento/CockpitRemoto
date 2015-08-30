@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.1.8" icons="true" automaticImage="PNG" always-add-relationships="false" generalizations="true" 
+  realizations="true" associations="true" dependencies="false" nesting-relationships="true">  
+  <class id="1" language="java" name="br.com.formento.cockpitRemoto.service.interpreter.AbstractEstruturaInstrucao" 
+    project="CockpitRemoto" 
+    file="/CockpitRemoto/src/main/java/br/com/formento/cockpitRemoto/service/interpreter/AbstractEstruturaInstrucao.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="207" width="233" x="421" y="841"/>    
+    <display autosize="false" stereotype="true" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="br.com.formento.cockpitRemoto.service.interpreter.InstrucaoInterpreterVazio" 
+    project="CockpitRemoto" 
+    file="/CockpitRemoto/src/main/java/br/com/formento/cockpitRemoto/service/interpreter/InstrucaoInterpreterVazio.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="298" x="747" y="360"/>    
+    <display autosize="false" stereotype="true" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="br.com.formento.cockpitRemoto.service.interpreter.ContextoInstrucaoInterpreter" 
+    project="CockpitRemoto" 
+    file="/CockpitRemoto/src/main/java/br/com/formento/cockpitRemoto/service/interpreter/ContextoInstrucaoInterpreter.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="346" x="209" y="1089"/>    
+    <display autosize="false" stereotype="true" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="br.com.formento.cockpitRemoto.service.interpreter.InstrucaoInterpreterExecutar" 
+    project="CockpitRemoto" 
+    file="/CockpitRemoto/src/main/java/br/com/formento/cockpitRemoto/service/interpreter/InstrucaoInterpreterExecutar.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="81" width="386" x="-58" y="147"/>    
+    <display autosize="false" stereotype="true" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" name="br.com.formento.cockpitRemoto.service.interpreter.EstruturaInstrucaoVazio" 
+    project="CockpitRemoto" 
+    file="/CockpitRemoto/src/main/java/br/com/formento/cockpitRemoto/service/interpreter/EstruturaInstrucaoVazio.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="135" width="233" x="757" y="613"/>    
+    <display autosize="false" stereotype="true" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="6" language="java" 
+    name="br.com.formento.cockpitRemoto.service.interpreter.EstruturaInstrucaoAdicionarMovel" project="CockpitRemoto" 
+    file="/CockpitRemoto/src/main/java/br/com/formento/cockpitRemoto/service/interpreter/EstruturaInstrucaoAdicionarMovel.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="189" width="233" x="-57" y="614"/>    
+    <display autosize="false" stereotype="true" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="7" language="java" name="br.com.formento.cockpitRemoto.service.interpreter.InstrucaoInterpreterMovimento" 
+    project="CockpitRemoto" 
+    file="/CockpitRemoto/src/main/java/br/com/formento/cockpitRemoto/service/interpreter/InstrucaoInterpreterMovimento.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="298" x="183" y="483"/>    
+    <display autosize="false" stereotype="true" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="8" language="java" name="br.com.formento.cockpitRemoto.service.interpreter.EstruturaInstrucaoValidarMalha" 
+    project="CockpitRemoto" 
+    file="/CockpitRemoto/src/main/java/br/com/formento/cockpitRemoto/service/interpreter/EstruturaInstrucaoValidarMalha.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="171" width="233" x="506" y="613"/>    
+    <display autosize="false" stereotype="true" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="9" language="java" name="br.com.formento.cockpitRemoto.service.interpreter.Interpreter" 
+    project="CockpitRemoto" 
+    file="/CockpitRemoto/src/main/java/br/com/formento/cockpitRemoto/service/interpreter/Interpreter.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="63" width="292" x="808" y="26"/>    
+    <display autosize="false" stereotype="true" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="10" language="java" name="br.com.formento.cockpitRemoto.service.interpreter.AbstractInstrucaoInterpreter" 
+    project="CockpitRemoto" 
+    file="/CockpitRemoto/src/main/java/br/com/formento/cockpitRemoto/service/interpreter/AbstractInstrucaoInterpreter.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="257" x="379" y="154"/>    
+    <display autosize="false" stereotype="true" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="11" language="java" 
+    name="br.com.formento.cockpitRemoto.service.interpreter.AbstractInstrucaoInterpreterEstrutura" 
+    project="CockpitRemoto" 
+    file="/CockpitRemoto/src/main/java/br/com/formento/cockpitRemoto/service/interpreter/AbstractInstrucaoInterpreterEstrutura.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="386" x="299" y="294"/>    
+    <display autosize="false" stereotype="true" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="12" language="java" 
+    name="br.com.formento.cockpitRemoto.service.interpreter.InstrucaoInterpreterAdicionarMovel" project="CockpitRemoto" 
+    file="/CockpitRemoto/src/main/java/br/com/formento/cockpitRemoto/service/interpreter/InstrucaoInterpreterAdicionarMovel.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="298" x="-60" y="366"/>    
+    <display autosize="false" stereotype="true" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="13" language="java" 
+    name="br.com.formento.cockpitRemoto.service.interpreter.InstrucaoInterpreterNaoEncontrada" project="CockpitRemoto" 
+    file="/CockpitRemoto/src/main/java/br/com/formento/cockpitRemoto/service/interpreter/InstrucaoInterpreterNaoEncontrada.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="81" width="386" x="709" y="142"/>    
+    <display autosize="false" stereotype="true" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="14" language="java" 
+    name="br.com.formento.cockpitRemoto.service.interpreter.ResultadoInterpreterInstrucao" project="CockpitRemoto" 
+    file="/CockpitRemoto/src/main/java/br/com/formento/cockpitRemoto/service/interpreter/ResultadoInterpreterInstrucao.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="276" x="618" y="1086"/>    
+    <display autosize="false" stereotype="true" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <interface id="15" language="java" name="br.com.formento.cockpitRemoto.service.interpreter.ContextoInterpreter" 
+    project="CockpitRemoto" 
+    file="/CockpitRemoto/src/main/java/br/com/formento/cockpitRemoto/service/interpreter/ContextoInterpreter.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="81" width="238" x="-67" y="1102"/>    
+    <display autosize="false" stereotype="true" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="16" language="java" name="br.com.formento.cockpitRemoto.service.interpreter.EstruturaInstrucaoComentario" 
+    project="CockpitRemoto" 
+    file="/CockpitRemoto/src/main/java/br/com/formento/cockpitRemoto/service/interpreter/EstruturaInstrucaoComentario.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="135" width="233" x="1004" y="614"/>    
+    <display autosize="false" stereotype="true" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="17" language="java" 
+    name="br.com.formento.cockpitRemoto.service.interpreter.InstrucaoInterpreterValidarMalha" project="CockpitRemoto" 
+    file="/CockpitRemoto/src/main/java/br/com/formento/cockpitRemoto/service/interpreter/InstrucaoInterpreterValidarMalha.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="298" x="503" y="483"/>    
+    <display autosize="false" stereotype="true" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="18" language="java" 
+    name="br.com.formento.cockpitRemoto.service.interpreter.ResultadoInterpreterInstrucaoImpl" project="CockpitRemoto" 
+    file="/CockpitRemoto/src/main/java/br/com/formento/cockpitRemoto/service/interpreter/ResultadoInterpreterInstrucaoImpl.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="171" width="309" x="934" y="1051"/>    
+    <display autosize="false" stereotype="true" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="19" language="java" name="br.com.formento.cockpitRemoto.service.interpreter.EstruturaInstrucao" 
+    project="CockpitRemoto" 
+    file="/CockpitRemoto/src/main/java/br/com/formento/cockpitRemoto/service/interpreter/EstruturaInstrucao.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="232" x="96" y="890"/>    
+    <display autosize="false" stereotype="true" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="20" language="java" name="br.com.formento.cockpitRemoto.service.interpreter.EstruturaInstrucaoMovimento" 
+    project="CockpitRemoto" 
+    file="/CockpitRemoto/src/main/java/br/com/formento/cockpitRemoto/service/interpreter/EstruturaInstrucaoMovimento.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="171" width="297" x="186" y="615"/>    
+    <display autosize="false" stereotype="true" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="21" language="java" 
+    name="br.com.formento.cockpitRemoto.service.interpreter.InstrucaoInterpreterInicializaExecucao" 
+    project="CockpitRemoto" 
+    file="/CockpitRemoto/src/main/java/br/com/formento/cockpitRemoto/service/interpreter/InstrucaoInterpreterInicializaExecucao.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="81" width="386" x="-45" y="10"/>    
+    <display autosize="false" stereotype="true" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="22" language="java" name="br.com.formento.cockpitRemoto.service.interpreter.InstrucaoInterpreter" 
+    project="CockpitRemoto" 
+    file="/CockpitRemoto/src/main/java/br/com/formento/cockpitRemoto/service/interpreter/InstrucaoInterpreter.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="45" width="139" x="441" y="38"/>    
+    <display autosize="false" stereotype="true" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="23" language="java" name="br.com.formento.cockpitRemoto.service.interpreter.InstrucaoInterpreterComentario" 
+    project="CockpitRemoto" 
+    file="/CockpitRemoto/src/main/java/br/com/formento/cockpitRemoto/service/interpreter/InstrucaoInterpreterComentario.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="298" x="909" y="247"/>    
+    <display autosize="false" stereotype="true" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <realization id="24">    
+    <end type="SOURCE" refId="13"/>    
+    <end type="TARGET" refId="22"/>  
+  </realization>  
+  <generalization id="25">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="1"/>  
+  </generalization>  
+  <realization id="26">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="22"/>  
+  </realization>  
+  <association id="27">    
+    <end type="SOURCE" refId="17" navigable="false">      
+      <attribute id="28" name="estruturaInstrucao"/>      
+      <multiplicity id="29" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="8" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="30">    
+    <end type="SOURCE" refId="23"/>    
+    <end type="TARGET" refId="11"/>  
+  </generalization>  
+  <realization id="31">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="15"/>  
+  </realization>  
+  <realization id="32">    
+    <end type="SOURCE" refId="21"/>    
+    <end type="TARGET" refId="22"/>  
+  </realization>  
+  <association id="33">    
+    <end type="SOURCE" refId="12" navigable="false">      
+      <attribute id="34" name="estruturaInstrucao"/>      
+      <multiplicity id="35" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="6" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="36">    
+    <end type="SOURCE" refId="7" navigable="false">      
+      <attribute id="37" name="estruturaInstrucao"/>      
+      <multiplicity id="38" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="20" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="39">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="11"/>  
+  </generalization>  
+  <realization id="40">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="19"/>  
+  </realization>  
+  <generalization id="41">    
+    <end type="SOURCE" refId="22"/>    
+    <end type="TARGET" refId="9"/>  
+  </generalization>  
+  <generalization id="42">    
+    <end type="SOURCE" refId="16"/>    
+    <end type="TARGET" refId="1"/>  
+  </generalization>  
+  <realization id="43">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="22"/>  
+  </realization>  
+  <generalization id="44">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="11"/>  
+  </generalization>  
+  <association id="45">    
+    <end type="SOURCE" refId="2" navigable="false">      
+      <attribute id="46" name="estruturaInstrucao"/>      
+      <multiplicity id="47" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="5" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="48">    
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="49" name="output"/>      
+      <multiplicity id="50" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="14" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="51">    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="10"/>  
+  </generalization>  
+  <generalization id="52">    
+    <end type="SOURCE" refId="13"/>    
+    <end type="TARGET" refId="10"/>  
+  </generalization>  
+  <generalization id="53">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="1"/>  
+  </generalization>  
+  <generalization id="54">    
+    <end type="SOURCE" refId="20"/>    
+    <end type="TARGET" refId="1"/>  
+  </generalization>  
+  <association id="55">    
+    <end type="SOURCE" refId="23" navigable="false">      
+      <attribute id="56" name="estruturaInstrucao"/>      
+      <multiplicity id="57" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="16" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="58">    
+    <end type="SOURCE" refId="18"/>    
+    <end type="TARGET" refId="14"/>  
+  </realization>  
+  <generalization id="59">    
+    <end type="SOURCE" refId="17"/>    
+    <end type="TARGET" refId="11"/>  
+  </generalization>  
+  <generalization id="60">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="1"/>  
+  </generalization>  
+  <generalization id="61">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="10"/>  
+  </generalization>  
+  <generalization id="62">    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="11"/>  
+  </generalization>  
+  <classifier-display autosize="true" stereotype="true" package="false" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>
