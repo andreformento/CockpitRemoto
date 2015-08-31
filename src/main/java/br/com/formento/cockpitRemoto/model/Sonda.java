@@ -1,6 +1,8 @@
 package br.com.formento.cockpitRemoto.model;
 
 public class Sonda implements Movel, Comparable<Sonda> {
+	
+	private static final long serialVersionUID = 1L;
 
 	private Integer ordem;
 	private Posicao posicao;

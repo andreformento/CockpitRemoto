@@ -18,4 +18,6 @@ public interface CenarioProcessamento extends EntidadeConsistente, Cloneable {
 
 	CenarioProcessamento clone() throws CloneNotSupportedException;
 
+	Relatorio gerarRelatorio();
+
 }

@@ -1,6 +1,8 @@
 package br.com.formento.cockpitRemoto.model;
 
 public class ResultadoImpl implements Resultado {
+	
+	private static final long serialVersionUID = 1L;
 
 	private TipoResultado tipoResultado;
 	private String mensagem;

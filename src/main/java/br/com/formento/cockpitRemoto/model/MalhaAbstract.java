@@ -1,10 +1,12 @@
 package br.com.formento.cockpitRemoto.model;
 
-import java.util.Collection;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
-import java.util.TreeSet;
+
+import br.com.formento.cockpitRemoto.comparator.MovelComparableByOrdem;
 
 public abstract class MalhaAbstract implements Malha {
 
@@ -25,10 +27,10 @@ public abstract class MalhaAbstract implements Malha {
 	 * Retorna a lista de Movel pela ordem de insert
 	 */
 	@Override
-	public Collection<Movel> getMoveisOrdemInsert() {
-		TreeSet<Movel> moveisOrdenados = new TreeSet<>(moveisPorPosicao.values());
-		moveisPorPosicao.values();
-		return moveisOrdenados;
+	public List<Movel> getMoveisOrdemInsert() {
+		List<Movel> result = new ArrayList<Movel>(moveisPorPosicao.values());
+		result.sort(new MovelComparableByOrdem());
+		return result;
 	}
 
 	@Override

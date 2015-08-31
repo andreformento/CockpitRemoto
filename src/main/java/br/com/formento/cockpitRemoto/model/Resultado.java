@@ -1,6 +1,8 @@
 package br.com.formento.cockpitRemoto.model;
 
-public interface Resultado extends Cloneable {
+import java.io.Serializable;
+
+public interface Resultado extends Cloneable, Serializable {
 
 	TipoResultado getTipoResultado();
 

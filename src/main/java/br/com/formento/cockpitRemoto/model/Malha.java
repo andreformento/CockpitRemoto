@@ -1,6 +1,6 @@
 package br.com.formento.cockpitRemoto.model;
 
-import java.util.Collection;
+import java.util.List;
 import java.util.Map;
 
 public interface Malha extends EntidadeConsistente, Cloneable {
@@ -13,7 +13,7 @@ public interface Malha extends EntidadeConsistente, Cloneable {
 
 	Resultado trocarPosicao(Posicao posicaoAtual, Posicao novaPosicao);
 
-	Collection<Movel> getMoveisOrdemInsert();
+	List<Movel> getMoveisOrdemInsert();
 
 	Map<Posicao, Movel> getMoveis();
 

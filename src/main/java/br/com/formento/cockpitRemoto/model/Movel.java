@@ -1,6 +1,8 @@
 package br.com.formento.cockpitRemoto.model;
 
-public interface Movel extends EntidadeConsistente, Cloneable {
+import java.io.Serializable;
+
+public interface Movel extends EntidadeConsistente, Cloneable, Serializable {
 
 	Posicao getPosicao();
 

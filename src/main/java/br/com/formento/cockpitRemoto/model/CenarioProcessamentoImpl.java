@@ -1,5 +1,8 @@
 package br.com.formento.cockpitRemoto.model;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class CenarioProcessamentoImpl implements CenarioProcessamento {
 
 	private Malha malha;
@@ -103,6 +106,16 @@ public class CenarioProcessamentoImpl implements CenarioProcessamento {
 			clone.resultado = resultado.clone();
 
 		return clone;
+	}
+
+	@Override
+	public Relatorio gerarRelatorio() {
+		List<Movel> moveisOrdemInsert;
+		if (getMalha() != null && getMalha().getMoveisOrdemInsert() != null)
+			moveisOrdemInsert = getMalha().getMoveisOrdemInsert();
+		else
+			moveisOrdemInsert = new ArrayList<>();
+		return new RelatorioImpl(resultado, moveisOrdemInsert);
 	}
 
 }

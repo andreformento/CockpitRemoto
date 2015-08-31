@@ -1,6 +1,10 @@
 package br.com.formento.cockpitRemoto.model;
 
-public class Posicao implements Comparable<Posicao>, EntidadeConsistente, Cloneable {
+import java.io.Serializable;
+
+public class Posicao implements Comparable<Posicao>, EntidadeConsistente, Cloneable, Serializable {
+
+	private static final long serialVersionUID = 1L;
 
 	private Integer x;
 	private Integer y;
