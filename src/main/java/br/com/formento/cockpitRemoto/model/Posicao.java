@@ -1,6 +1,6 @@
 package br.com.formento.cockpitRemoto.model;
 
-public class Posicao implements Comparable<Posicao>, EntidadeConsistente {
+public class Posicao implements Comparable<Posicao>, EntidadeConsistente, Cloneable {
 
 	private Integer x;
 	private Integer y;
@@ -34,6 +34,11 @@ public class Posicao implements Comparable<Posicao>, EntidadeConsistente {
 
 	public Direcao getDirecao() {
 		return direcao;
+	}
+
+	@Override
+	public Posicao clone() throws CloneNotSupportedException {
+		return (Posicao) super.clone();
 	}
 
 	@Override

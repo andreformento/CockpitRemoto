@@ -31,4 +31,38 @@ public class ResultadoImpl implements Resultado {
 		return exibir.toString();
 	}
 
+	@Override
+	public ResultadoImpl clone() throws CloneNotSupportedException {
+		ResultadoImpl clone = (ResultadoImpl) super.clone();
+		return clone;
+	}
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((mensagem == null) ? 0 : mensagem.hashCode());
+		result = prime * result + ((tipoResultado == null) ? 0 : tipoResultado.hashCode());
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		ResultadoImpl other = (ResultadoImpl) obj;
+		if (mensagem == null) {
+			if (other.mensagem != null)
+				return false;
+		} else if (!mensagem.equals(other.mensagem))
+			return false;
+		if (tipoResultado != other.tipoResultado)
+			return false;
+		return true;
+	}
+
 }

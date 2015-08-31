@@ -1,7 +1,5 @@
 package br.com.formento.cockpitRemoto.service.templateMethod;
 
-import java.util.List;
-
 import br.com.formento.cockpitRemoto.model.CenarioProcessamento;
 import br.com.formento.cockpitRemoto.model.Entrada;
 import br.com.formento.cockpitRemoto.model.Resultado;
@@ -21,7 +19,6 @@ import br.com.formento.cockpitRemoto.service.observer.ComandoSubject;
 
 public class CockpitTemplateMethodImpl extends CockpitTemplateMethodAbstract {
 
-	private final EntradaBuilder entradaBuilder;
 	private final CenarioProcessamentoFactoryMethod cenarioProcessamentoFactoryMethod;
 	private final ComandoSubjectFactoryMethod comandoSubjectFactoryMethod;
 	private final IteradorComandoSubjectFactoryMethod iteradorComandoSubjectFactoryMethod;
@@ -30,14 +27,14 @@ public class CockpitTemplateMethodImpl extends CockpitTemplateMethodAbstract {
 
 	// atributos criados quando for rodado o sistema
 	private ComandoSubject comandoSubject;
-	private List<String> comandoList;
 	private IteradorComandoSubject iteradorComandoSubject;
+	private InstrucaoFlyweight instrucaoFlyweight;
 
-	public CockpitTemplateMethodImpl(EntradaBuilder entradaBuilder, CenarioProcessamentoFactoryMethod cenarioProcessamentoFactoryMethod,
-			ComandoSubjectFactoryMethod comandoSubjectFactoryMethod, IteradorComandoSubjectFactoryMethod iteradorComandoSubjectFactoryMethod,
+	public CockpitTemplateMethodImpl(CenarioProcessamentoFactoryMethod cenarioProcessamentoFactoryMethod,
+			ComandoSubjectFactoryMethod comandoSubjectFactoryMethod,
+			IteradorComandoSubjectFactoryMethod iteradorComandoSubjectFactoryMethod,
 			InstrucaoFlyweightFactoryMethod instrucaoFlyweightFactoryMethod,
 			ResultadoInterpreterInstrucaoFactoryMethod resultadoInterpreterInstrucaoFactoryMethod) {
-		this.entradaBuilder = entradaBuilder;
 		this.cenarioProcessamentoFactoryMethod = cenarioProcessamentoFactoryMethod;
 		this.comandoSubjectFactoryMethod = comandoSubjectFactoryMethod;
 		this.iteradorComandoSubjectFactoryMethod = iteradorComandoSubjectFactoryMethod;
@@ -46,32 +43,36 @@ public class CockpitTemplateMethodImpl extends CockpitTemplateMethodAbstract {
 	}
 
 	@Override
-	public Entrada lerEntrada() {
+	public Entrada lerEntrada(EntradaBuilder entradaBuilder) {
 		EntradaDirector entradaDirector = new EntradaDirectorImpl(entradaBuilder);
 		entradaDirector.construirInstancia();
-		entrada = entradaDirector.getProduct();
-		comandoList = entrada.getComandoList();
+		Entrada entrada = entradaDirector.getProduct();
 
 		return entrada;
 	}
 
 	@Override
 	public CenarioProcessamento criarCenarioProcessamento() {
-		cenarioProcessamento = cenarioProcessamentoFactoryMethod.criarInstancia();
-		return cenarioProcessamento;
+		return cenarioProcessamentoFactoryMethod.criarInstancia();
 	}
 
 	@Override
-	public void configurarComandos() {
-		InstrucaoFlyweight instrucaoFlyweight = instrucaoFlyweightFactoryMethod.criarInstancia();
-		ResultadoInterpreterInstrucao resultadoInterpreterInstrucao = resultadoInterpreterInstrucaoFactoryMethod.criarInstancia(cenarioProcessamento);
+	protected void checklistDeInstancia() {
+		instrucaoFlyweight = instrucaoFlyweightFactoryMethod.criarInstancia();
+	}
 
-		ComandoSubjectDirector comandoSubjectDirector = comandoSubjectFactoryMethod.criarInstancia(instrucaoFlyweight, resultadoInterpreterInstrucao);
+	@Override
+	protected void checklistDeExecucao(Entrada entrada) {
+		ResultadoInterpreterInstrucao resultadoInterpreterInstrucao = resultadoInterpreterInstrucaoFactoryMethod
+				.criarInstancia(getCenarioProcessamento());
+
+		ComandoSubjectDirector comandoSubjectDirector = comandoSubjectFactoryMethod.criarInstancia(instrucaoFlyweight,
+				resultadoInterpreterInstrucao);
 
 		comandoSubjectDirector.construirInstancia();
 		comandoSubject = comandoSubjectDirector.getProduct();
 
-		iteradorComandoSubject = iteradorComandoSubjectFactoryMethod.criarInstancia(comandoList, comandoSubject);
+		iteradorComandoSubject = iteradorComandoSubjectFactoryMethod.criarInstancia(entrada.getComandoList(), comandoSubject);
 	}
 
 	@Override

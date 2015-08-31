@@ -1,6 +1,6 @@
 package br.com.formento.cockpitRemoto.model;
 
-public interface Movel extends EntidadeConsistente {
+public interface Movel extends EntidadeConsistente, Cloneable {
 
 	Posicao getPosicao();
 
@@ -9,5 +9,7 @@ public interface Movel extends EntidadeConsistente {
 	void setOrdem(Integer ordem);
 
 	Integer getOrdem();
+
+	Movel clone() throws CloneNotSupportedException;
 
 }

@@ -52,4 +52,57 @@ public class CenarioProcessamentoImpl implements CenarioProcessamento {
 		this.resultado = resultado;
 	}
 
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((malha == null) ? 0 : malha.hashCode());
+		result = prime * result + ((movel == null) ? 0 : movel.hashCode());
+		result = prime * result + ((resultado == null) ? 0 : resultado.hashCode());
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		CenarioProcessamentoImpl other = (CenarioProcessamentoImpl) obj;
+		if (malha == null) {
+			if (other.malha != null)
+				return false;
+		} else if (!malha.equals(other.malha))
+			return false;
+		if (movel == null) {
+			if (other.movel != null)
+				return false;
+		} else if (!movel.equals(other.movel))
+			return false;
+		if (resultado == null) {
+			if (other.resultado != null)
+				return false;
+		} else if (!resultado.equals(other.resultado))
+			return false;
+		return true;
+	}
+
+	@Override
+	public CenarioProcessamentoImpl clone() throws CloneNotSupportedException {
+		CenarioProcessamentoImpl clone = (CenarioProcessamentoImpl) super.clone();
+
+		if (malha != null)
+			clone.malha = malha.clone();
+
+		if (movel != null)
+			clone.movel = movel.clone();
+
+		if (resultado != null)
+			clone.resultado = resultado.clone();
+
+		return clone;
+	}
+
 }

@@ -4,8 +4,6 @@ import br.com.formento.cockpitRemoto.service.templateMethod.CockpitTemplateMetho
 
 public class CockpitBuilderPadrao extends CockpitAbstractBuilder {
 
-	private final EntradaBuilder entradaBuilder;
-
 	private CenarioProcessamentoFactoryMethod cenarioProcessamentoFactoryMethod;
 	private IteradorComandoSubjectFactoryMethod iteradorComandoSubjectFactoryMethod;
 	private ComandoSubjectFactoryMethodImpl comandoSubjectFactoryMethod;
@@ -14,8 +12,7 @@ public class CockpitBuilderPadrao extends CockpitAbstractBuilder {
 
 	private ResultadoInterpreterInstrucaoFactoryMethod resultadoInterpreterInstrucaoFactoryMethod;
 
-	public CockpitBuilderPadrao(EntradaBuilder entradaBuilder) {
-		this.entradaBuilder = entradaBuilder;
+	public CockpitBuilderPadrao() {
 	}
 
 	@Override
@@ -46,7 +43,7 @@ public class CockpitBuilderPadrao extends CockpitAbstractBuilder {
 
 	@Override
 	public void buildInstance() {
-		product = new CockpitTemplateMethodImpl(entradaBuilder, cenarioProcessamentoFactoryMethod, comandoSubjectFactoryMethod,
+		product = new CockpitTemplateMethodImpl(cenarioProcessamentoFactoryMethod, comandoSubjectFactoryMethod,
 				iteradorComandoSubjectFactoryMethod, instrucaoFlyweightFactoryMethod, resultadoInterpreterInstrucaoFactoryMethod);
 	}
 

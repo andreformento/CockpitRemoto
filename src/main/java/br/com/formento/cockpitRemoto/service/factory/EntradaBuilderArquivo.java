@@ -15,7 +15,7 @@ public class EntradaBuilderArquivo extends EntradaAbstractBuilder implements Ent
 	public void buildComandoList() {
 		try {
 			repositorioInstrucaoTarget.abrir();
-			comandoList = repositorioInstrucaoTarget.ler();
+			setComandoList(repositorioInstrucaoTarget.ler());
 		} finally {
 			repositorioInstrucaoTarget.fechar();
 		}
@@ -23,7 +23,7 @@ public class EntradaBuilderArquivo extends EntradaAbstractBuilder implements Ent
 
 	@Override
 	public void buildInstance() {
-		product = new EntradaImpl(comandoList);
+		product = new EntradaImpl(getComandoList());
 	}
 
 }

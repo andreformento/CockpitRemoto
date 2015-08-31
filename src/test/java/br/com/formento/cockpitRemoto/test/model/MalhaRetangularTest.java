@@ -5,6 +5,11 @@ import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+import java.util.Map.Entry;
+
 import org.junit.Before;
 import org.junit.Test;
 
@@ -80,8 +85,27 @@ public class MalhaRetangularTest {
 	}
 
 	@Test
-	public void testGetMoveis() {
-		assertFalse(malha.getMoveis().isEmpty());
+	public void testGetMoveisOrdemDeInsert() {
+		MalhaRetangular malhaRetangularOrdemDeInsert = new MalhaRetangular(posicao44);
+
+		List<Movel> listaAssert = new ArrayList<>();
+
+		listaAssert.add(new Sonda(new Posicao(4, 3)));
+		malhaRetangularOrdemDeInsert.adicionarMovel(listaAssert.get(0));
+		listaAssert.add(new Sonda(new Posicao(3, 4)));
+		malhaRetangularOrdemDeInsert.adicionarMovel(listaAssert.get(1));
+		listaAssert.add(new Sonda(new Posicao(2, 1)));
+		malhaRetangularOrdemDeInsert.adicionarMovel(listaAssert.get(2));
+		listaAssert.add(new Sonda(new Posicao(2, 2)));
+		malhaRetangularOrdemDeInsert.adicionarMovel(listaAssert.get(3));
+
+		Collection<Movel> ordemDeInsert = malhaRetangularOrdemDeInsert.getMoveisOrdemInsert();
+		assertFalse(ordemDeInsert.isEmpty());
+		Object[] movelOrdenado = ordemDeInsert.toArray();
+		assertEquals(listaAssert.size(), movelOrdenado.length);
+
+		for (int i = 0; i < listaAssert.size(); i++)
+			assertEquals("Erro no índice: " + i, listaAssert.get(i), movelOrdenado[i]);
 	}
 
 	@Test
@@ -111,6 +135,35 @@ public class MalhaRetangularTest {
 		assertEquals(Integer.valueOf(2), movel2.getOrdem());
 		assertEquals(Integer.valueOf(3), movel3.getOrdem());
 		assertEquals(Integer.valueOf(4), movel4.getOrdem());
+	}
+
+	@Test
+	public void testClone() throws CloneNotSupportedException {
+		MalhaRetangular malhaClonar = new MalhaRetangular(new Posicao(7, 2));
+		malhaClonar.adicionarMovel(new Sonda(new Posicao(3, 1, Direcao.NORTE)));
+
+		MalhaRetangular clone = malhaClonar.clone();
+
+		assertEquals(malhaClonar, clone);
+		assertFalse(malhaClonar == clone);
+
+		assertEquals(malhaClonar.getMoveis(), clone.getMoveis());
+		assertFalse(malhaClonar.getMoveis() == clone.getMoveis());
+
+		assertEquals(malhaClonar.getMoveis().size(), clone.getMoveis().size());
+		for (Entry<Posicao, Movel> item : malhaClonar.getMoveis().entrySet()) {
+			Movel movelClone = clone.getMoveis().get(item.getKey());
+			assertNotNull(movelClone);
+
+			assertEquals(item.getValue(), movelClone);
+			assertFalse(item.getValue() == movelClone);
+		}
+
+		assertEquals(malhaClonar.getPosicaoMaxima(), clone.getPosicaoMaxima());
+		assertFalse(malhaClonar.getPosicaoMaxima() == clone.getPosicaoMaxima());
+
+		assertEquals(malhaClonar.isConsistente(), clone.isConsistente());
+		assertFalse(malhaClonar.isConsistente() == clone.isConsistente());
 	}
 
 }

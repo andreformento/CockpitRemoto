@@ -14,7 +14,12 @@ public class InstrucaoMoverParaFrente extends AbstractInstrucaoMovimento {
 
 		Posicao novaPosicao = movimentoAndarParaFrente.novaPosicao(posicaoAtual);
 
-		return cenarioProcessamento.getMalha().trocarPosicao(posicaoAtual, novaPosicao);
+		Resultado resultado = cenarioProcessamento.getMalha().trocarPosicao(posicaoAtual, novaPosicao);
+
+		if (resultado.getTipoResultado().isResultadoOk())
+			cenarioProcessamento.setMovel(cenarioProcessamento.getMalha().getByPosicao(novaPosicao));
+
+		return resultado;
 	}
 
 }

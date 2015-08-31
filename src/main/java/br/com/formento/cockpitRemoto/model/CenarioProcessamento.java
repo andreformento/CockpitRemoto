@@ -1,6 +1,6 @@
 package br.com.formento.cockpitRemoto.model;
 
-public interface CenarioProcessamento extends EntidadeConsistente {
+public interface CenarioProcessamento extends EntidadeConsistente, Cloneable {
 
 	void setMalha(Malha malha);
 
@@ -15,5 +15,7 @@ public interface CenarioProcessamento extends EntidadeConsistente {
 	Resultado validarMovel();
 
 	void configurarResultado(Resultado resultado);
+
+	CenarioProcessamento clone() throws CloneNotSupportedException;
 
 }

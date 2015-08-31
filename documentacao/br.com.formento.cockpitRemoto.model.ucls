@@ -4,7 +4,7 @@
   <class id="1" language="java" name="br.com.formento.cockpitRemoto.model.ResultadoImpl" project="CockpitRemoto" 
     file="/CockpitRemoto/src/main/java/br/com/formento/cockpitRemoto/model/ResultadoImpl.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="129" y="522"/>    
+    <position height="-1" width="-1" x="125" y="607"/>    
     <display autosize="true" stereotype="true" package="false" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -15,7 +15,7 @@
     project="CockpitRemoto" 
     file="/CockpitRemoto/src/main/java/br/com/formento/cockpitRemoto/model/CenarioProcessamento.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="1015" y="703"/>    
+    <position height="-1" width="-1" x="1019" y="857"/>    
     <display autosize="true" stereotype="true" package="false" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -26,7 +26,7 @@
     project="CockpitRemoto" 
     file="/CockpitRemoto/src/main/java/br/com/formento/cockpitRemoto/model/EntidadeConsistente.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="816" y="641"/>    
+    <position height="-1" width="-1" x="812" y="759"/>    
     <display autosize="true" stereotype="true" package="false" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -37,7 +37,7 @@
     project="CockpitRemoto" 
     file="/CockpitRemoto/src/main/java/br/com/formento/cockpitRemoto/model/CenarioProcessamentoImpl.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="619" y="770"/>    
+    <position height="-1" width="-1" x="618" y="861"/>    
     <display autosize="true" stereotype="true" package="false" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -57,7 +57,7 @@
   <interface id="6" language="java" name="br.com.formento.cockpitRemoto.model.Movel" project="CockpitRemoto" 
     file="/CockpitRemoto/src/main/java/br/com/formento/cockpitRemoto/model/Movel.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="717" y="527"/>    
+    <position height="-1" width="-1" x="693" y="577"/>    
     <display autosize="true" stereotype="true" package="false" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -77,7 +77,7 @@
   <class id="8" language="java" name="br.com.formento.cockpitRemoto.model.Posicao" project="CockpitRemoto" 
     file="/CockpitRemoto/src/main/java/br/com/formento/cockpitRemoto/model/Posicao.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="1015" y="187"/>    
+    <position height="-1" width="-1" x="1033" y="185"/>    
     <display autosize="true" stereotype="true" package="false" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -87,7 +87,7 @@
   <class id="9" language="java" name="br.com.formento.cockpitRemoto.model.MalhaRetangular" project="CockpitRemoto" 
     file="/CockpitRemoto/src/main/java/br/com/formento/cockpitRemoto/model/MalhaRetangular.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="720" y="385"/>    
+    <position height="-1" width="-1" x="717" y="404"/>    
     <display autosize="true" stereotype="true" package="false" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -97,7 +97,7 @@
   <class id="10" language="java" name="br.com.formento.cockpitRemoto.model.Sonda" project="CockpitRemoto" 
     file="/CockpitRemoto/src/main/java/br/com/formento/cockpitRemoto/model/Sonda.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="1034" y="483"/>    
+    <position height="-1" width="-1" x="1031" y="544"/>    
     <display autosize="true" stereotype="true" package="false" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -107,7 +107,7 @@
   <interface id="11" language="java" name="br.com.formento.cockpitRemoto.model.Resultado" project="CockpitRemoto" 
     file="/CockpitRemoto/src/main/java/br/com/formento/cockpitRemoto/model/Resultado.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="228" y="702"/>    
+    <position height="-1" width="-1" x="235" y="827"/>    
     <display autosize="true" stereotype="true" package="false" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -127,7 +127,7 @@
   <class id="13" language="java" name="br.com.formento.cockpitRemoto.model.MalhaAbstract" project="CockpitRemoto" 
     file="/CockpitRemoto/src/main/java/br/com/formento/cockpitRemoto/model/MalhaAbstract.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="337" y="270"/>    
+    <position height="-1" width="-1" x="336" y="308"/>    
     <display autosize="true" stereotype="true" package="false" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -157,125 +157,149 @@
   <interface id="16" language="java" name="br.com.formento.cockpitRemoto.model.Malha" project="CockpitRemoto" 
     file="/CockpitRemoto/src/main/java/br/com/formento/cockpitRemoto/model/Malha.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="428" y="549"/>    
+    <position height="-1" width="-1" x="432" y="597"/>    
     <display autosize="true" stereotype="true" package="false" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </interface>  
-  <association id="17">    
+  <realization id="17">    
+    <end type="SOURCE" refId="15"/>    
+    <end type="TARGET" refId="12"/>  
+  </realization>  
+  <association id="18">    
+    <end type="SOURCE" refId="10" navigable="false">      
+      <attribute id="19" name="posicao">        
+        <position height="0" width="0" x="18" y="-2"/>      
+      </attribute>      
+      <multiplicity id="20" minimum="0" maximum="1">        
+        <position height="0" width="0" x="18" y="-2"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="8" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="21">    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="13"/>  
+  </generalization>  
+  <association id="22">    
     <end type="SOURCE" refId="8" navigable="false">      
-      <attribute id="18" name="direcao"/>      
-      <multiplicity id="19" minimum="0" maximum="1"/>    
+      <attribute id="23" name="direcao">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="24" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
     </end>    
     <end type="TARGET" refId="5" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <generalization id="20">    
+  <generalization id="25">    
     <end type="SOURCE" refId="16"/>    
     <end type="TARGET" refId="3"/>  
   </generalization>  
-  <realization id="21">    
-    <end type="SOURCE" refId="8"/>    
-    <end type="TARGET" refId="3"/>  
-  </realization>  
-  <association id="22">    
-    <end type="SOURCE" refId="1" navigable="false">      
-      <attribute id="23" name="tipoResultado"/>      
-      <multiplicity id="24" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="7" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <realization id="25">    
+  <realization id="26">    
     <end type="SOURCE" refId="10"/>    
     <end type="TARGET" refId="6"/>  
   </realization>  
-  <realization id="26">    
+  <association id="27">    
+    <end type="SOURCE" refId="4" navigable="false">      
+      <attribute id="28" name="movel">        
+        <position height="0" width="0" x="-24" y="50"/>      
+      </attribute>      
+      <multiplicity id="29" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-24" y="50"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="6" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="30">    
+    <end type="SOURCE" refId="9" navigable="false">      
+      <attribute id="31" name="posicaoMaxima">        
+        <position height="0" width="0" x="18" y="-2"/>      
+      </attribute>      
+      <multiplicity id="32" minimum="0" maximum="1">        
+        <position height="0" width="0" x="18" y="-2"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="8" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="33">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="11"/>  
+  </realization>  
+  <realization id="34">    
     <end type="SOURCE" refId="9"/>    
     <end type="TARGET" refId="16"/>  
   </realization>  
-  <association id="27">    
-    <end type="SOURCE" refId="4" navigable="false">      
-      <attribute id="28" name="resultado"/>      
-      <multiplicity id="29" minimum="0" maximum="1"/>    
+  <generalization id="35">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="3"/>  
+  </generalization>  
+  <realization id="36">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="2"/>  
+  </realization>  
+  <realization id="37">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="3"/>  
+  </realization>  
+  <association id="38">    
+    <end type="SOURCE" refId="13" navigable="false">      
+      <attribute id="39" name="resultadoIsConsistente">        
+        <position height="0" width="0" x="7" y="125"/>      
+      </attribute>      
+      <multiplicity id="40" minimum="0" maximum="1">        
+        <position height="0" width="0" x="7" y="125"/>      
+      </multiplicity>    
     </end>    
     <end type="TARGET" refId="11" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <realization id="30">    
+  <realization id="41">    
     <end type="SOURCE" refId="13"/>    
     <end type="TARGET" refId="16"/>  
   </realization>  
-  <association id="31">    
-    <end type="SOURCE" refId="9" navigable="false">      
-      <attribute id="32" name="posicaoMaxima"/>      
-      <multiplicity id="33" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="8" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="34">    
-    <end type="SOURCE" refId="4" navigable="false">      
-      <attribute id="35" name="movel"/>      
-      <multiplicity id="36" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="6" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <generalization id="37">    
-    <end type="SOURCE" refId="9"/>    
-    <end type="TARGET" refId="13"/>  
+  <generalization id="42">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="3"/>  
   </generalization>  
-  <association id="38">    
+  <association id="43">    
     <end type="SOURCE" refId="4" navigable="false">      
-      <attribute id="39" name="malha"/>      
-      <multiplicity id="40" minimum="0" maximum="1"/>    
+      <attribute id="44" name="malha">        
+        <position height="0" width="0" x="4" y="48"/>      
+      </attribute>      
+      <multiplicity id="45" minimum="0" maximum="1">        
+        <position height="0" width="0" x="4" y="48"/>      
+      </multiplicity>    
     </end>    
     <end type="TARGET" refId="16" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <realization id="41">    
-    <end type="SOURCE" refId="4"/>    
-    <end type="TARGET" refId="2"/>  
-  </realization>  
-  <generalization id="42">    
-    <end type="SOURCE" refId="2"/>    
-    <end type="TARGET" refId="3"/>  
-  </generalization>  
-  <association id="43">    
-    <end type="SOURCE" refId="13" navigable="false">      
-      <attribute id="44" name="moveis"/>      
-      <multiplicity id="45" minimum="0" maximum="2147483647"/>    
+  <association id="46">    
+    <end type="SOURCE" refId="1" navigable="false">      
+      <attribute id="47" name="tipoResultado">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="48" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
     </end>    
-    <end type="TARGET" refId="6" navigable="true"/>    
+    <end type="TARGET" refId="7" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <generalization id="46">    
-    <end type="SOURCE" refId="6"/>    
-    <end type="TARGET" refId="3"/>  
-  </generalization>  
-  <realization id="47">    
-    <end type="SOURCE" refId="15"/>    
-    <end type="TARGET" refId="12"/>  
-  </realization>  
-  <realization id="48">    
-    <end type="SOURCE" refId="1"/>    
-    <end type="TARGET" refId="11"/>  
-  </realization>  
   <association id="49">    
-    <end type="SOURCE" refId="10" navigable="false">      
-      <attribute id="50" name="posicao"/>      
-      <multiplicity id="51" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="8" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="52">    
-    <end type="SOURCE" refId="13" navigable="false">      
-      <attribute id="53" name="resultadoIsConsistente"/>      
-      <multiplicity id="54" minimum="0" maximum="1"/>    
+    <end type="SOURCE" refId="4" navigable="false">      
+      <attribute id="50" name="resultado">        
+        <position height="0" width="0" x="7" y="125"/>      
+      </attribute>      
+      <multiplicity id="51" minimum="0" maximum="1">        
+        <position height="0" width="0" x="7" y="125"/>      
+      </multiplicity>    
     </end>    
     <end type="TARGET" refId="11" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  

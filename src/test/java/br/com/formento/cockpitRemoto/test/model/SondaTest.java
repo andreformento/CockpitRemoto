@@ -1,5 +1,6 @@
 package br.com.formento.cockpitRemoto.test.model;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
@@ -35,6 +36,25 @@ public class SondaTest {
 	public void testIsConsistenteSemDirecao() {
 		Sonda sondaSemPosicao = new Sonda(new Posicao(5, 5));
 		assertFalse(sondaSemPosicao.isConsistente().getTipoResultado().isResultadoOk());
+	}
+
+	@Test
+	public void testClone() throws CloneNotSupportedException {
+		Sonda sonda = new Sonda(new Posicao(20011, 20211));
+		sonda.setOrdem(20111);
+
+		Sonda clone = sonda.clone();
+
+		assertEquals(sonda, clone);
+		assertFalse(sonda == clone);
+
+		assertEquals(sonda.getOrdem(), clone.getOrdem());
+
+		assertEquals(sonda.getPosicao(), clone.getPosicao());
+		assertFalse(sonda.getPosicao() == clone.getPosicao());
+
+		assertEquals(sonda.isConsistente(), clone.isConsistente());
+		assertFalse(sonda.isConsistente() == clone.isConsistente());
 	}
 
 }

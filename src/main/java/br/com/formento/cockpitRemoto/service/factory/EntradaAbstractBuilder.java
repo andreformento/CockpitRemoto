@@ -6,6 +6,14 @@ import br.com.formento.cockpitRemoto.model.Entrada;
 
 public abstract class EntradaAbstractBuilder extends AbstractBuilder<Entrada> implements EntradaBuilder {
 
-	protected List<String> comandoList;
+	private List<String> comandoList;
+
+	public List<String> getComandoList() {
+		return comandoList;
+	}
+
+	protected void setComandoList(List<String> comandoList) {
+		this.comandoList = comandoList;
+	}
 
 }

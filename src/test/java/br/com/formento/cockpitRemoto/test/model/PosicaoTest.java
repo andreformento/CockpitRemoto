@@ -81,4 +81,20 @@ public class PosicaoTest {
 		assertTrue(posicaoComDirecao.isConsistente().getTipoResultado().isResultadoOk());
 	}
 
+	@Test
+	public void testClone() throws CloneNotSupportedException {
+		Posicao posicao = new Posicao(222, 333);
+
+		Posicao clone = posicao.clone();
+
+		assertEquals(posicao, clone);
+		assertFalse(posicao == clone);
+
+		assertEquals(posicao.getDirecao(), clone.getDirecao());
+		assertFalse(posicao == clone);
+
+		assertEquals(posicao.isConsistente(), clone.isConsistente());
+		assertFalse(posicao.isConsistente() == clone.isConsistente());
+	}
+
 }
